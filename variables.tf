@@ -1,26 +1,26 @@
-variable "github_repository" {
+variable "FLUX_GITHUB_REPO" {
   type        = string
   description = "GitHub repository to store Flux manifests"
 }
 
-variable "target_path" {
+variable "TARGET_PATH" {
   type        = string
-  default     = "clusters"
+  default     = "clusters/my-cluster"
   description = "Flux manifests subdirectory"
 }
 
-variable "github_token" {
+variable "GITHUB_TOKEN" {
   type        = string
   default     = ""
   description = "The token used to authenticate with the Git repository"
 }
 
-variable "private_key" {
+variable "PRIVATE_KEY" {
   type        = string
   description = "The private key used to authenticate with the Git repository"
 }
 
-variable "config_path" {
+variable "CONFIG_PATH" {
   type        = string
   default     = "~/.kube/config"
   description = "The path to the kubeconfig file"
