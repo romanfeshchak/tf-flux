@@ -10,8 +10,8 @@ provider "flux" {
     }
   }
 }
-depends_on = [github_repository.terraincognitus]
+
 resource "flux_bootstrap_git" "terraincognitus" {
   path = var.TARGET_PATH
-
+depends_on = [github_repository.terraincognitus]
 }
