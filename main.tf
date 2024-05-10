@@ -3,7 +3,7 @@ provider "flux" {
     config_path = var.CONFIG_PATH
   }
   git = {
-    url = github_repository.terraincognitus.html_url
+    url = "https://github.com/${var.FLUX_GITHUB_REPO}.git"
     http = {
       username = "git"
       password = var.GITHUB_TOKEN
