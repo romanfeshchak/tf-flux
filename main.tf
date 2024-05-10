@@ -11,6 +11,6 @@ provider "flux" {
   }
 }
 
-resource "flux_bootstrap_git" "terraincognitus" {
+resource "flux_bootstrap_git" "this" {
   path = var.TARGET_PATH
 }
